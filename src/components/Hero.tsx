@@ -7,19 +7,19 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
-      image: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
+      image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro79.jpeg',
       title: 'Eleganza e Funzionalità',
       subtitle: 'Tende da sole di alta qualità per il tuo spazio esterno'
     },
     {
-      image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027',
+      image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro129.jpeg',
       title: 'Design Italiano',
       subtitle: 'Soluzioni personalizzate per ogni esigenza'
     },
     {
-      image: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
+      image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro77.jpeg',
       title: 'Esperienza e Innovazione',
-      subtitle: 'Dal 1980 al servizio della tua casa'
+      subtitle: 'Dal 2004 al servizio della tua casa'
     }
   ];
 
@@ -54,7 +54,7 @@ const Hero = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`transition-all duration-700 ease-in-out absolute transform w-full
+              className={`transition-all duration-700 ease-in-out transform w-full
                 ${index === currentSlide 
                   ? 'opacity-100 translate-y-0' 
                   : 'opacity-0 -translate-y-8'}`}

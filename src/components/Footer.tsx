@@ -12,7 +12,7 @@ const Footer = () => {
               Crystal<span className="font-light">Tende</span>
             </h3>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Dal 1980 progettiamo e installiamo tende da sole di alta qualità, combinando estetica e funzionalità per migliorare il tuo spazio esterno.
+              Dal 2004 progettiamo e installiamo tende da sole di alta qualità, combinando estetica e funzionalità per migliorare il tuo spazio esterno.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -51,14 +51,14 @@ const Footer = () => {
             <h3 className="text-base font-medium">Contatti</h3>
             <div className="space-y-3">
               <a href="tel:+390123456789" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
-                <Phone className="h-4 w-4 mr-2 text-primary" /> +39 012 345 6789
+                <Phone className="h-4 w-4 mr-2 text-primary" /> +39 348 055 2778
               </a>
               <a href="mailto:info@crystaltende.com" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
                 <Mail className="h-4 w-4 mr-2 text-primary" /> info@crystaltende.com
               </a>
               <div className="flex items-start text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 mr-2 text-primary mt-1 flex-shrink-0" /> 
-                <span>Via Roma 123, 20100 Milano, Italia</span>
+                <span>Via Calvart 123, 40010 Bologna BO, Italia</span>
               </div>
             </div>
           </div>

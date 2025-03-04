@@ -5,47 +5,47 @@ import InstallationGallery from '../components/InstallationGallery';
 const Installazioni = () => {
   const installations = [
     {
-      src: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
+      src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro79.jpeg',
       alt: 'Tenda da Sole Residenziale',
       location: 'Villa Privata, Milano'
     },
     {
-      src: 'https://images.unsplash.com/photo-1472396961693-142e6e269027',
+      src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro106.jpeg',
       alt: 'Pergola Bioclimatica',
       location: 'Ristorante La Terrazza, Roma'
     },
     {
-      src: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
+      src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro109.jpeg',
       alt: 'Tenda a Bracci Estensibili',
       location: 'Appartamento Privato, Firenze'
     },
     {
-      src: 'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
+      src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro216.jpg',
       alt: 'Tenda a Caduta Verticale',
       location: 'Hotel Belvedere, Taormina'
     },
     {
-      src: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
+      src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro129.jpeg',
       alt: 'Tenda Ermetica',
       location: 'Bar Centrale, Napoli'
     },
     {
-      src: 'https://images.unsplash.com/photo-1472396961693-142e6e269027',
+      src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro132.jpeg',
       alt: 'Tenda Motorizzata',
       location: 'Villa con Piscina, Sardegna'
     },
     {
-      src: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
+      src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro90.jpeg',
       alt: 'Pergola Addossata',
       location: 'Agriturismo Il Casale, Toscana'
     },
     {
-      src: 'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
+      src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro198.jpg',
       alt: 'Tenda da Sole per Terrazzo',
       location: 'Attico Privato, Torino'
     },
     {
-      src: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
+      src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro77.jpeg',
       alt: 'Tenda a Vela',
       location: 'Stabilimento Balneare, Rimini'
     }

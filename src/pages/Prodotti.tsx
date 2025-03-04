@@ -5,40 +5,40 @@ import ProductCard from '../components/ProductCard';
 const Prodotti = () => {
   const productCategories = [
     {
-      id: 'tende-da-sole',
-      title: 'Tende da Sole',
+      id: 'tende-da-esterno',
+      title: 'Tende da Esterno',
       description: 'Le nostre tende da sole combinano design italiano e materiali di alta qualità per offrire protezione dal sole e valorizzare il tuo spazio esterno.',
-      image: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d'
+      image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro98.jpeg'
     },
     {
-      id: 'pergole',
-      title: 'Pergole',
+      id: 'pergolati',
+      title: 'Pergolati',
       description: 'Strutture eleganti e resistenti che creano un\'area ombreggiata ideale per pranzi all\'aperto, relax e intrattenimento nel tuo giardino o terrazzo.',
-      image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027'
+      image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro104.jpeg'
     },
     {
-      id: 'tende-a-bracci',
-      title: 'Tende a Bracci',
+      id: 'bioclimatiche',
+      title: 'Bioclimatiche',
       description: 'Soluzioni versatili che si estendono facilmente per creare ombra sul tuo terrazzo o giardino, disponibili con diversi tipi di tessuto e colorazioni.',
-      image: 'https://images.unsplash.com/photo-1493962853295-0fd70327578a'
+      image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/pergola5.jpg'
     },
     {
-      id: 'tende-a-caduta',
-      title: 'Tende a Caduta',
+      id: 'chiusure-perimetrali',
+      title: 'Chiusure Perimetrali',
       description: 'Perfette per proteggere da sole e sguardi indiscreti, queste tende verticali sono ideali per balconi, finestre e verande.',
-      image: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04'
+      image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/chiusurePerimetrali.jpg'
     },
     {
-      id: 'tende-ermetiche',
-      title: 'Tende Ermetiche',
+      id: 'vele',
+      title: 'Vele',
       description: 'Tende a chiusura totale che offrono la massima protezione da sole, pioggia e vento. Ideali per verande e spazi chiusi.',
-      image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027'
+      image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/vele.jpg'
     },
     {
-      id: 'tende-motorizzate',
-      title: 'Tende Motorizzate',
+      id: 'pavimenti',
+      title: 'Pavimenti',
       description: 'Soluzioni all\'avanguardia controllabili con telecomando o smartphone per il massimo del comfort e della comodità.',
-      image: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d'
+      image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/pavimenti.jpg'
     }
   ];
 

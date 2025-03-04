@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import Logo from "../assets/logo_crystal.jpg"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,6 +52,7 @@ const Navbar = () => {
             to="/" 
             className="flex items-center"
           >
+            <img src={Logo} alt="logo" className="w-14"/>
             <span className="text-2xl font-display font-semibold tracking-tight">
               Crystal<span className="font-light">Tende</span>
             </span>
