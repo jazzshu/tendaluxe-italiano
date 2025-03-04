@@ -9,9 +9,10 @@ export interface ProductCardProps {
   description: string;
   image: string;
   delay?: number;
+  productCount?: number;
 }
 
-const ProductCard = ({ id, title, description, image, delay = 0 }: ProductCardProps) => {
+const ProductCard = ({ id, title, description, image, delay = 0, productCount }: ProductCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -30,6 +31,13 @@ const ProductCard = ({ id, title, description, image, delay = 0 }: ProductCardPr
       <div className="p-6">
         <h3 className="text-xl font-display font-medium mb-2">{title}</h3>
         <p className="text-muted-foreground text-sm mb-4 line-clamp-3">{description}</p>
+        
+        {productCount !== undefined && (
+          <p className="text-xs text-muted-foreground mb-3">
+            {productCount} {productCount === 1 ? 'prodotto disponibile' : 'prodotti disponibili'}
+          </p>
+        )}
+        
         <Link
           to={`/prodotti/${id}`}
           className="inline-flex items-center text-sm font-medium text-primary group-hover:underline"

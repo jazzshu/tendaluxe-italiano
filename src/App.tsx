@@ -8,6 +8,8 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import Prodotti from "./pages/Prodotti";
+import ProductCategory from "./pages/ProductCategory";
+import ProductDetail from "./pages/ProductDetail";
 import Installazioni from "./pages/Installazioni";
 import ChiSiamo from "./pages/ChiSiamo";
 import Contatti from "./pages/Contatti";
@@ -40,6 +42,8 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/prodotti" element={<Prodotti />} />
+            <Route path="/prodotti/:categoryId" element={<ProductCategory />} />
+            <Route path="/prodotti/:categoryId/:productId" element={<ProductDetail />} />
             <Route path="/installazioni" element={<Installazioni />} />
             <Route path="/chi-siamo" element={<ChiSiamo />} />
             <Route path="/contatti" element={<Contatti />} />

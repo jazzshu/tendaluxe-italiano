@@ -1,47 +1,9 @@
 
 import { motion } from 'framer-motion';
 import ProductCard from '../components/ProductCard';
+import { productCategories } from '../data/products';
 
 const Prodotti = () => {
-  const productCategories = [
-    {
-      id: 'tende-da-sole',
-      title: 'Tende da Sole',
-      description: 'Le nostre tende da sole combinano design italiano e materiali di alta qualità per offrire protezione dal sole e valorizzare il tuo spazio esterno.',
-      image: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d'
-    },
-    {
-      id: 'pergole',
-      title: 'Pergole',
-      description: 'Strutture eleganti e resistenti che creano un\'area ombreggiata ideale per pranzi all\'aperto, relax e intrattenimento nel tuo giardino o terrazzo.',
-      image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027'
-    },
-    {
-      id: 'tende-a-bracci',
-      title: 'Tende a Bracci',
-      description: 'Soluzioni versatili che si estendono facilmente per creare ombra sul tuo terrazzo o giardino, disponibili con diversi tipi di tessuto e colorazioni.',
-      image: 'https://images.unsplash.com/photo-1493962853295-0fd70327578a'
-    },
-    {
-      id: 'tende-a-caduta',
-      title: 'Tende a Caduta',
-      description: 'Perfette per proteggere da sole e sguardi indiscreti, queste tende verticali sono ideali per balconi, finestre e verande.',
-      image: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04'
-    },
-    {
-      id: 'tende-ermetiche',
-      title: 'Tende Ermetiche',
-      description: 'Tende a chiusura totale che offrono la massima protezione da sole, pioggia e vento. Ideali per verande e spazi chiusi.',
-      image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027'
-    },
-    {
-      id: 'tende-motorizzate',
-      title: 'Tende Motorizzate',
-      description: 'Soluzioni all\'avanguardia controllabili con telecomando o smartphone per il massimo del comfort e della comodità.',
-      image: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d'
-    }
-  ];
-
   return (
     <div className="min-h-screen pt-24 pb-20">
       <div className="container mx-auto px-4 md:px-6">
@@ -61,14 +23,15 @@ const Prodotti = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {productCategories.map((product, index) => (
+          {productCategories.map((category, index) => (
             <ProductCard
-              key={product.id}
-              id={product.id}
-              title={product.title}
-              description={product.description}
-              image={product.image}
+              key={category.id}
+              id={category.id}
+              title={category.title}
+              description={category.description}
+              image={category.image}
               delay={index}
+              productCount={category.products.length}
             />
           ))}
         </div>
