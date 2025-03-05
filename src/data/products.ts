@@ -20,15 +20,15 @@ export interface ProductCategory {
 
 export const productCategories: ProductCategory[] = [
   {
-    id: 'tende-da-sole',
-    title: 'Tende da Sole',
-    description: 'Le nostre tende da sole combinano design italiano e materiali di alta qualità per offrire protezione dal sole e valorizzare il tuo spazio esterno.',
-    image: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
+    id: 'tende-da-esterno',
+    title: 'Tende da Esterno',
+    description: 'Le nostre tende da esterno combinano design italiano e materiali di alta qualità per offrire protezione dal sole e valorizzare il tuo spazio esterno.',
+    image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro98.jpeg',
     products: [
       {
-        id: 'tenda-a-caduta-classica',
-        title: 'Tenda a Caduta Classica',
-        description: 'La tenda a caduta classica è perfetta per balconi e finestre. Offre protezione dal sole e una privacy ottimale.',
+        id: 'tenda-a-bracci',
+        title: 'Tenda a Bracci Estensibili',
+        description: 'Le tende a bracci estensibili sono ideali per terrazze e giardini. Offrono una copertura ampia e sono facili da utilizzare.',
         features: [
           'Resistente ai raggi UV',
           'Tessuti impermeabili',
@@ -38,16 +38,16 @@ export const productCategories: ProductCategory[] = [
         materials: ['Alluminio', 'Acrilico', 'PVC'],
         colors: ['Bianco', 'Beige', 'Grigio', 'Verde', 'Blu'],
         images: [
-          'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
-          'https://images.unsplash.com/photo-1721322800607-8c38375eef04'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro101.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro58.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro208.jpg'
         ],
-        categoryId: 'tende-da-sole'
+        categoryId: 'tende-da-esterno'
       },
       {
-        id: 'tenda-a-bracci-estensibili',
-        title: 'Tenda a Bracci Estensibili',
-        description: 'Le tende a bracci estensibili sono ideali per terrazze e giardini. Offrono una copertura ampia e sono facili da utilizzare.',
+        id: 'guide-laterali',
+        title: 'Guide Laterali',
+        description: 'Le guide laterali sono ideali per terrazze e giardini. Offrono una copertura ampia e sono facili da utilizzare.',
         features: [
           'Estensione fino a 3 metri',
           'Regolazione dell\'inclinazione',
@@ -57,11 +57,11 @@ export const productCategories: ProductCategory[] = [
         materials: ['Alluminio', 'Acciaio inox', 'Acrilico'],
         colors: ['Bianco', 'Avorio', 'Marrone', 'Grigio', 'Blu navy'],
         images: [
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
-          'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
-          'https://images.unsplash.com/photo-1721322800607-8c38375eef04'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro175.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro152.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro216.jpg'
         ],
-        categoryId: 'tende-da-sole'
+        categoryId: 'tende-da-esterno'
       },
       {
         id: 'tenda-a-cappottina',
@@ -76,11 +76,11 @@ export const productCategories: ProductCategory[] = [
         materials: ['Alluminio', 'Acrilico impermeabile'],
         colors: ['Rosso', 'Verde', 'Blu', 'Arancione', 'A righe'],
         images: [
-          'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
-          'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro200.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro23.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro142.jpg'
         ],
-        categoryId: 'tende-da-sole'
+        categoryId: 'tende-da-esterno'
       }
     ]
   },
@@ -88,12 +88,12 @@ export const productCategories: ProductCategory[] = [
     id: 'pergole',
     title: 'Pergole',
     description: 'Strutture eleganti e resistenti che creano un\'area ombreggiata ideale per pranzi all\'aperto, relax e intrattenimento nel tuo giardino o terrazzo.',
-    image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027',
+    image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro88.jpeg',
     products: [
       {
-        id: 'pergola-bioclimatica',
-        title: 'Pergola Bioclimatica',
-        description: 'La pergola bioclimatica permette di regolare la quantità di luce e aria. Ideale per creare un ambiente confortevole in ogni stagione.',
+        id: 'piantane-anteriori',
+        title: 'Piantane Anteriori',
+        description: 'Le piantane anteriori permettono di regolare la quantità di luce e aria. Ideale per creare un ambiente confortevole in ogni stagione.',
         features: [
           'Lamelle orientabili',
           'Resistente a vento e neve',
@@ -103,16 +103,16 @@ export const productCategories: ProductCategory[] = [
         materials: ['Alluminio', 'Acciaio inox'],
         colors: ['Bianco', 'Grigio antracite', 'Marrone', 'Nero'],
         images: [
-          'https://images.unsplash.com/photo-1472396961693-142e6e269027',
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
-          'https://images.unsplash.com/photo-1721322800607-8c38375eef04'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro86.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro106.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro117.jpeg'
         ],
         categoryId: 'pergole'
       },
       {
-        id: 'pergola-addossata',
-        title: 'Pergola Addossata',
-        description: 'La pergola addossata si installa direttamente sulla facciata dell\'edificio, ottimizzando lo spazio disponibile.',
+        id: 'piane-e-autoportanti',
+        title: 'Piane e Autoportanti',
+        description: 'Le pergole piane e autoportanti addossata si installa direttamente sulla facciata dell\'edificio, ottimizzando lo spazio disponibile.',
         features: [
           'Installazione a parete',
           'Design compatto',
@@ -122,16 +122,16 @@ export const productCategories: ProductCategory[] = [
         materials: ['Alluminio', 'PVC', 'Policarbonato'],
         colors: ['Bianco', 'Avorio', 'Grigio', 'Effetto legno'],
         images: [
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
-          'https://images.unsplash.com/photo-1472396961693-142e6e269027',
-          'https://images.unsplash.com/photo-1721322800607-8c38375eef04'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro79.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro82.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro77.jpeg'
         ],
         categoryId: 'pergole'
       },
       {
-        id: 'pergola-autoportante',
-        title: 'Pergola Autoportante',
-        description: 'La pergola autoportante è una struttura indipendente che può essere posizionata ovunque nel giardino o terrazzo.',
+        id: 'senza-piantane',
+        title: 'Pergola Senza Piantane',
+        description: 'La pergola senza piantane è una struttura indipendente che può essere posizionata ovunque nel giardino o terrazzo.',
         features: [
           'Struttura indipendente',
           'Flessibilità di posizionamento',
@@ -141,23 +141,23 @@ export const productCategories: ProductCategory[] = [
         materials: ['Alluminio rinforzato', 'Acciaio'],
         colors: ['Bianco', 'Grigio', 'Nero', 'Verde'],
         images: [
-          'https://images.unsplash.com/photo-1472396961693-142e6e269027',
-          'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro90.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro138.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro100.jpeg'
         ],
         categoryId: 'pergole'
       }
     ]
   },
   {
-    id: 'tende-a-bracci',
-    title: 'Tende a Bracci',
+    id: 'bioclimatiche',
+    title: 'Bioclimatiche',
     description: 'Soluzioni versatili che si estendono facilmente per creare ombra sul tuo terrazzo o giardino, disponibili con diversi tipi di tessuto e colorazioni.',
     image: 'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
     products: [
       {
-        id: 'tenda-a-bracci-tradizionale',
-        title: 'Tenda a Bracci Tradizionale',
+        id: 'r601-pergoklima',
+        title: 'R601-PERGOKLIMA',
         description: 'La tenda a bracci tradizionale è un classico per la protezione dal sole di terrazze e balconi.',
         features: [
           'Estensione fino a 3,5 metri',
@@ -168,15 +168,15 @@ export const productCategories: ProductCategory[] = [
         materials: ['Alluminio', 'Acrilico'],
         colors: ['Bianco', 'Crema', 'Grigio', 'A righe'],
         images: [
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
-          'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
-          'https://images.unsplash.com/photo-1721322800607-8c38375eef04'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro87.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro85.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro82.jpeg'
         ],
         categoryId: 'tende-a-bracci'
       },
       {
-        id: 'tenda-a-bracci-cassonata',
-        title: 'Tenda a Bracci Cassonata',
+        id: 'r610-pergoklima',
+        title: 'R610-PERGOKLIMA',
         description: 'La tenda a bracci cassonata protegge il tessuto quando la tenda è chiusa, garantendo una maggiore durata.',
         features: [
           'Cassonetto protettivo',
@@ -187,15 +187,15 @@ export const productCategories: ProductCategory[] = [
         materials: ['Alluminio', 'Acrilico impermeabile'],
         colors: ['Bianco', 'Avorio', 'Grigio', 'Blu'],
         images: [
-          'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
-          'https://images.unsplash.com/photo-1466721591366-2d5fba72006d'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro76.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro79.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro72.jpeg'
         ],
         categoryId: 'tende-a-bracci'
       },
       {
-        id: 'tenda-a-bracci-con-volant',
-        title: 'Tenda a Bracci con Volant',
+        id: 'r620-pergoklima',
+        title: 'R620-PERGOKLIMA',
         description: 'La tenda a bracci con volant frontale offre una protezione aggiuntiva dal sole basso e un tocco estetico distintivo.',
         features: [
           'Volant decorativo',
@@ -206,9 +206,9 @@ export const productCategories: ProductCategory[] = [
         materials: ['Alluminio', 'Acrilico'],
         colors: ['Bianco', 'Verde', 'Bordeaux', 'A righe', 'Fantasia'],
         images: [
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
-          'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
-          'https://images.unsplash.com/photo-1466721591366-2d5fba72006d'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro54.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro49.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro31.jpeg'
         ],
         categoryId: 'tende-a-bracci'
       }
