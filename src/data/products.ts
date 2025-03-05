@@ -88,7 +88,7 @@ export const productCategories: ProductCategory[] = [
     id: 'pergole',
     title: 'Pergole',
     description: 'Strutture eleganti e resistenti che creano un\'area ombreggiata ideale per pranzi all\'aperto, relax e intrattenimento nel tuo giardino o terrazzo.',
-    image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro88.jpeg',
+    image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro77.jpeg',
     products: [
       {
         id: 'piantane-anteriori',
@@ -153,7 +153,7 @@ export const productCategories: ProductCategory[] = [
     id: 'bioclimatiche',
     title: 'Bioclimatiche',
     description: 'Soluzioni versatili che si estendono facilmente per creare ombra sul tuo terrazzo o giardino, disponibili con diversi tipi di tessuto e colorazioni.',
-    image: 'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
+    image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro87.jpeg',
     products: [
       {
         id: 'r601-pergoklima',
