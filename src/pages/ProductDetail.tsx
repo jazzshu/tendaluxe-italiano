@@ -31,7 +31,7 @@ const ProductDetail = () => {
 
   // Determine the back link - special case for tende-a-bracci
   const getBackLink = () => {
-    if (categoryId === 'tende-a-bracci') {
+    if (categoryId === 'bioclimatiche') {
       return '/prodotti';
     }
     return `/prodotti/${categoryId}`;
@@ -50,7 +50,7 @@ const ProductDetail = () => {
             className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-primary mb-8"
           >
             <ArrowLeft className="mr-1.5 h-4 w-4" />
-            {categoryId === 'tende-a-bracci' ? 'Torna alle categorie' : `Torna a ${category.title}`}
+            {categoryId === 'bioclimatiche' ? 'Torna alle categorie' : `Torna a ${category.title}`}
           </Link>
 
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-12">

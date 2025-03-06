@@ -15,9 +15,9 @@ export interface ProductCardProps {
 const ProductCard = ({ id, title, description, image, delay = 0, productCount }: ProductCardProps) => {
   // Generate the correct link URL
   const getLinkUrl = () => {
-    // Special case for "tende-a-bracci" category
-    if (id === 'tende-a-bracci') {
-      return '/prodotti/tende-a-bracci/tenda-a-bracci-tradizionale';
+    // Special case for "bioclimatiche" category
+    if (id === 'bioclimatiche') {
+      return '/prodotti/bioclimatiche/r601-pergoklima';
     }
     // Default behavior for other categories
     return `/prodotti/${id}`;
