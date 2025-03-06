@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/tendalux-italiano/',
+  base: '/crystaltende/',
   server: {
     host: "0.0.0.0",
     port: 8080,
