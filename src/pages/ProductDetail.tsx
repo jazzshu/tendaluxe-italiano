@@ -29,6 +29,14 @@ const ProductDetail = () => {
     );
   }
 
+  // Determine the back link - special case for tende-a-bracci
+  const getBackLink = () => {
+    if (categoryId === 'tende-a-bracci') {
+      return '/prodotti';
+    }
+    return `/prodotti/${categoryId}`;
+  };
+
   return (
     <div className="min-h-screen pt-24 pb-20">
       <div className="container mx-auto px-4 md:px-6">
@@ -38,11 +46,11 @@ const ProductDetail = () => {
           transition={{ duration: 0.5 }}
         >
           <Link
-            to={`/prodotti/${categoryId}`}
+            to={getBackLink()}
             className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-primary mb-8"
           >
             <ArrowLeft className="mr-1.5 h-4 w-4" />
-            Torna a {category.title}
+            {categoryId === 'tende-a-bracci' ? 'Torna alle categorie' : `Torna a ${category.title}`}
           </Link>
 
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-12">
