@@ -13,6 +13,16 @@ export interface ProductCardProps {
 }
 
 const ProductCard = ({ id, title, description, image, delay = 0, productCount }: ProductCardProps) => {
+  // Generate the correct link URL
+  const getLinkUrl = () => {
+    // Special case for "tende-a-bracci" category
+    if (id === 'tende-a-bracci') {
+      return '/prodotti/tende-a-bracci/tenda-a-bracci-tradizionale';
+    }
+    // Default behavior for other categories
+    return `/prodotti/${id}`;
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -39,7 +49,7 @@ const ProductCard = ({ id, title, description, image, delay = 0, productCount }:
         )}
         
         <Link
-          to={`/prodotti/${id}`}
+          to={getLinkUrl()}
           className="inline-flex items-center text-sm font-medium text-primary group-hover:underline"
         >
           Scopri di più 
