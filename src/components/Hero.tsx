@@ -31,7 +31,7 @@ const Hero = () => {
   }, [slides.length]);
 
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section className="relative w-full h-[85vh] md:h-screen overflow-hidden">
       {/* Background Images */}
       {slides.map((slide, index) => (
         <div
@@ -60,26 +60,26 @@ const Hero = () => {
                   : 'opacity-0 -translate-y-8'}`}
               style={{ transitionDelay: index === currentSlide ? '400ms' : '0ms' }}
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-medium mb-4">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-medium mb-3 md:mb-4 px-2 md:px-0">
                 {slide.title}
               </h1>
-              <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-white/90">
+              <p className="text-base md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto text-white/90 px-2 md:px-0">
                 {slide.subtitle}
               </p>
             </div>
           ))}
 
-          <div className="mt-32 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="mt-16 md:mt-32 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               to="/prodotti"
-              className="px-6 py-3 bg-white text-primary rounded-md font-medium transition-all hover:bg-primary hover:text-white flex items-center group"
+              className="w-full sm:w-auto px-6 py-3 bg-white text-primary rounded-md font-medium transition-all hover:bg-primary hover:text-white flex items-center justify-center group"
             >
               Scopri i Prodotti
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
               to="/contatti"
-              className="px-6 py-3 bg-transparent text-white border border-white rounded-md font-medium transition-all hover:bg-white/10"
+              className="w-full sm:w-auto px-6 py-3 bg-transparent text-white border border-white rounded-md font-medium transition-all hover:bg-white/10"
             >
               Contattaci
             </Link>

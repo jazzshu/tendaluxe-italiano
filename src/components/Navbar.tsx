@@ -27,6 +27,11 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    if (!isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
   };
 
   const navLinks = [
@@ -41,8 +46,8 @@ const Navbar = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' 
-          : 'bg-transparent py-5'
+          ? 'bg-white/90 backdrop-blur-md shadow-sm py-2' 
+          : 'bg-transparent py-3 md:py-5'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
@@ -51,7 +56,7 @@ const Navbar = () => {
             to="/" 
             className="flex items-center"
           >
-            <span className="text-2xl font-display font-semibold tracking-tight">
+            <span className="text-xl md:text-2xl font-display font-semibold tracking-tight">
               Crystal<span className="font-light">Tende</span>
             </span>
           </Link>
@@ -90,12 +95,22 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       <div
-        className={`md:hidden fixed inset-0 z-50 bg-white/90 backdrop-blur-md transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed inset-0 z-50 bg-white/95 backdrop-blur-md transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
+        style={{ top: '0', height: '100%' }}
       >
         <div className="container h-full flex flex-col">
-          <div className="flex justify-end pt-4 px-4">
+          <div className="flex justify-between items-center pt-4 px-4">
+            <Link 
+              to="/" 
+              className="flex items-center"
+              onClick={toggleMenu}
+            >
+              <span className="text-xl font-display font-semibold tracking-tight">
+                Crystal<span className="font-light">Tende</span>
+              </span>
+            </Link>
             <button
               onClick={toggleMenu}
               className="focus:outline-none"
@@ -104,11 +119,12 @@ const Navbar = () => {
               <X className="h-6 w-6 text-primary" />
             </button>
           </div>
-          <nav className="flex flex-col space-y-8 items-center justify-center h-full">
+          <nav className="flex flex-col space-y-6 items-center justify-center h-full">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
+                onClick={toggleMenu}
                 className={`text-lg font-medium tracking-wide transition-colors hover:text-primary ${
                   location.pathname === link.path 
                     ? 'text-primary' 

@@ -28,24 +28,24 @@ const Index = () => {
       <Hero />
 
       {/* Features Section */}
-      <section className="py-20 bg-secondary">
+      <section className="py-12 md:py-20 bg-secondary">
         <div className="container mx-auto px-4 md:px-6">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="text-center max-w-3xl mx-auto mb-16"
+            className="text-center max-w-3xl mx-auto mb-10 md:mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-display font-medium mb-4">
+            <h2 className="text-2xl md:text-4xl font-display font-medium mb-4 px-2">
               Perché Scegliere Crystal Tende
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground px-2">
               Dal 1980 progettiamo e installiamo tende da sole di alta qualità, combinando estetica e funzionalità per migliorare il tuo spazio esterno.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
@@ -53,7 +53,7 @@ const Index = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="bg-white p-8 rounded-lg shadow-sm border border-border/50 flex flex-col items-center text-center"
+                className="bg-white p-6 md:p-8 rounded-lg shadow-sm border border-border/50 flex flex-col items-center text-center"
               >
                 <div className="mb-4 p-3 rounded-full bg-primary/10">
                   {feature.icon}
@@ -67,19 +67,20 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
+              className="w-full"
             >
               <img
                 src="https://images.unsplash.com/photo-1493962853295-0fd70327578a"
                 alt="Il nostro showroom"
-                className="rounded-lg shadow-md object-cover w-full h-[500px]"
+                className="rounded-lg shadow-md object-cover w-full h-[300px] md:h-[500px]"
               />
             </motion.div>
 
@@ -88,9 +89,9 @@ const Index = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
-              className="space-y-6"
+              className="space-y-4 md:space-y-6 px-1"
             >
-              <h2 className="text-3xl md:text-4xl font-display font-medium">
+              <h2 className="text-2xl md:text-4xl font-display font-medium">
                 La Nostra Storia
               </h2>
               <p className="text-muted-foreground">
@@ -99,7 +100,7 @@ const Index = () => {
               <p className="text-muted-foreground">
                 Ogni progetto viene seguito con passione dal primo contatto all'installazione finale, garantendo soluzioni su misura che soddisfano le esigenze specifiche di ogni cliente.
               </p>
-              <div className="pt-4">
+              <div className="pt-2 md:pt-4">
                 <Link
                   to="/chi-siamo"
                   className="inline-flex items-center text-primary hover:underline font-medium"
@@ -114,7 +115,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-white">
+      <section className="py-12 md:py-20 bg-primary text-white">
         <div className="container mx-auto px-4 md:px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -123,22 +124,22 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-display font-medium mb-6">
+            <h2 className="text-2xl md:text-4xl font-display font-medium mb-4 md:mb-6 px-2">
               Trasforma il Tuo Spazio Esterno
             </h2>
-            <p className="text-white/90 mb-8">
+            <p className="text-white/90 mb-6 md:mb-8 px-2">
               Contattaci oggi per una consulenza gratuita e scopri come le nostre tende da sole possono migliorare il comfort e l'estetica della tua casa.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
                 to="/contatti"
-                className="px-6 py-3 bg-white text-primary rounded-md font-medium transition-all hover:bg-white/90"
+                className="w-full sm:w-auto px-6 py-3 bg-white text-primary rounded-md font-medium transition-all hover:bg-white/90 text-center"
               >
                 Richiedi un Preventivo
               </Link>
               <Link
                 to="/prodotti"
-                className="px-6 py-3 bg-transparent text-white border border-white rounded-md font-medium transition-all hover:bg-white/10"
+                className="w-full sm:w-auto px-6 py-3 bg-transparent text-white border border-white rounded-md font-medium transition-all hover:bg-white/10 text-center"
               >
                 Esplora i Prodotti
               </Link>
