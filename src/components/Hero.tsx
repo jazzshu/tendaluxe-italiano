@@ -54,7 +54,7 @@ const Hero = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`transition-all duration-700 ease-in-out absolute transform w-full
+              className={`transition-all duration-700 ease-in-out transform w-full
                 ${index === currentSlide 
                   ? 'opacity-100 translate-y-0' 
                   : 'opacity-0 -translate-y-8'}`}

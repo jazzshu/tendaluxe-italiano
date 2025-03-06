@@ -119,13 +119,13 @@ const Navbar = () => {
               <X className="h-6 w-6 text-primary" />
             </button>
           </div>
-          <nav className="flex flex-col space-y-6 items-center justify-center h-full">
+          <nav className="flex flex-col items-center justify-center h-full">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 onClick={toggleMenu}
-                className={`text-lg font-medium tracking-wide transition-colors hover:text-primary ${
+                className={`text-lg font-medium tracking-wide transition-colors hover:text-primary mb-6 ${
                   location.pathname === link.path 
                     ? 'text-primary' 
                     : 'text-muted-foreground'
