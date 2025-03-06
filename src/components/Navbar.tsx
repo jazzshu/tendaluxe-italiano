@@ -28,6 +28,11 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    if (!isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
   };
 
   const navLinks = [
@@ -39,21 +44,19 @@ const Navbar = () => {
   ];
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled 
-          ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' 
-          : 'bg-transparent py-5'
-      }`}
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+          ? 'bg-white/90 backdrop-blur-md shadow-sm py-2'
+          : 'bg-transparent py-3 md:py-5'
+        }`}
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="flex items-center"
           >
-            <img src={Logo} alt="logo" className="w-14"/>
-            <span className="text-2xl font-display font-semibold tracking-tight">
+            <span className="text-xl md:text-2xl font-display font-semibold tracking-tight">
               Crystal<span className="font-light">Tende</span>
             </span>
           </Link>
@@ -65,8 +68,8 @@ const Navbar = () => {
                 key={link.path}
                 to={link.path}
                 className={`text-sm font-medium transition-colors hover:text-primary relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-primary after:origin-center after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300
-                  ${location.pathname === link.path 
-                    ? 'text-primary after:scale-x-100' 
+                  ${location.pathname === link.path
+                    ? 'text-primary after:scale-x-100'
                     : 'text-muted-foreground'}
                 `}
               >
@@ -92,12 +95,21 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       <div
-        className={`md:hidden fixed inset-0 z-50 bg-white/90 backdrop-blur-md transition-transform duration-300 ease-in-out ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`md:hidden fixed inset-0 z-50 bg-white transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
+        style={{ top: '0', height: '100vh' }} // Use vh for explicit full height
       >
         <div className="container h-full flex flex-col">
-          <div className="flex justify-end pt-4 px-4">
+          <div className="flex justify-between items-center pt-4 px-4">
+            <Link
+              to="/"
+              className="flex items-center"
+              onClick={toggleMenu}
+            >
+              <span className="text-xl font-display font-semibold tracking-tight">
+                Crystal<span className="font-light">Tende</span>
+              </span>
+            </Link>
             <button
               onClick={toggleMenu}
               className="focus:outline-none"
@@ -106,16 +118,16 @@ const Navbar = () => {
               <X className="h-6 w-6 text-primary" />
             </button>
           </div>
-          <nav className="flex flex-col space-y-8 items-center justify-center h-full">
+          <nav className="flex flex-col items-center justify-center flex-grow">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-lg font-medium tracking-wide transition-colors hover:text-primary ${
-                  location.pathname === link.path 
-                    ? 'text-primary' 
+                onClick={toggleMenu}
+                className={`text-lg font-medium tracking-wide transition-colors hover:text-primary mb-6 ${location.pathname === link.path
+                    ? 'text-primary'
                     : 'text-muted-foreground'
-                }`}
+                  }`}
               >
                 {link.name}
               </Link>
