@@ -9,7 +9,7 @@ const Hero = () => {
     {
       image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro79.jpeg',
       title: 'Eleganza e Funzionalità',
-      subtitle: 'Tende da sole di alta qualità per il tuo spazio esterno'
+      subtitle: 'Tende da sole di qualità per il tuo spazio esterno'
     },
     {
       image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro129.jpeg',

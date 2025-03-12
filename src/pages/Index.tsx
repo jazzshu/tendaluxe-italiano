@@ -19,7 +19,7 @@ const Index = () => {
     {
       icon: <Award className="h-8 w-8 text-primary" />,
       title: 'Design Italiano',
-      description: 'Ogni nostra tenda riflette la tradizione italiana del design, combinando funzionalità ed estetica per valorizzare il tuo spazio esterno.'
+      description: '100% Made in Italy. Ogni nostra tenda riflette la tradizione italiana del design, combinando funzionalità ed estetica per valorizzare il tuo spazio esterno.'
     }
   ];
 
@@ -41,7 +41,7 @@ const Index = () => {
               Perché Scegliere Crystal Tende
             </h2>
             <p className="text-muted-foreground px-2">
-              Dal 1980 progettiamo e installiamo tende da sole di alta qualità, combinando estetica e funzionalità per migliorare il tuo spazio esterno.
+              Progettiamo e installiamo tende da sole di qualità, combinando estetica e funzionalità per migliorare il tuo spazio esterno.
             </p>
           </motion.div>
 
@@ -95,7 +95,7 @@ const Index = () => {
                 La Nostra Storia
               </h2>
               <p className="text-muted-foreground">
-                Da oltre 20 anni, Crystal Tende è sinonimo di qualità e innovazione nel settore delle tende da sole. La nostra azienda a conduzione familiare ha iniziato come piccolo laboratorio artigianale e si è evoluta fino a diventare un punto di riferimento nel settore.
+                  Crystal Tende è sinonimo di qualità e innovazione nel settore delle tende da sole. La nostra azienda a conduzione familiare ha iniziato come piccolo laboratorio artigianale e si è evoluta fino a diventare un punto di riferimento nel settore.
               </p>
               <p className="text-muted-foreground">
                 Ogni progetto viene seguito con passione dal primo contatto all'installazione finale, garantendo soluzioni su misura che soddisfano le esigenze specifiche di ogni cliente.

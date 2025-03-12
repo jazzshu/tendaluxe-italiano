@@ -12,7 +12,7 @@ const Footer = () => {
               Crystal<span className="font-light">Tende</span>
             </h3>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Dal 2004 progettiamo e installiamo tende da sole di alta qualità, combinando estetica e funzionalità per migliorare il tuo spazio esterno.
+              Progettiamo e installiamo tende da sole di alta qualità, combinando estetica e funzionalità per migliorare il tuo spazio esterno.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -56,10 +56,10 @@ const Footer = () => {
               <a href="mailto:info@crystaltende.com" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
                 <Mail className="h-4 w-4 mr-2 text-primary" /> info@crystaltende.com
               </a>
-              <div className="flex items-start text-sm text-muted-foreground">
+{/*               <div className="flex items-start text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 mr-2 text-primary mt-1 flex-shrink-0" /> 
                 <span>Via Calvart 123, 40010 Bologna BO, Italia</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

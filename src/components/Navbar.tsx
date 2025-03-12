@@ -56,6 +56,7 @@ const Navbar = () => {
             to="/"
             className="flex items-center"
           >
+            <img src={Logo} alt="logo" className="w-10"/> 
             <span className="text-xl md:text-2xl font-display font-semibold tracking-tight">
               Crystal<span className="font-light">Tende</span>
             </span>

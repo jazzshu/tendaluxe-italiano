@@ -36,30 +36,31 @@ export const productCategories: ProductCategory[] = [
           'Design elegante e moderno'
         ],
         materials: ['Alluminio', 'Acrilico', 'PVC'],
-        colors: ['Bianco', 'Beige', 'Grigio', 'Verde', 'Blu'],
+        colors: ['A scelta da campionario'],
         images: [
           'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro101.jpeg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro58.jpeg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro208.jpg'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/tende_a_bracci1.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/tende_a_bracci2.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/tende_a_bracci3.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/tende_a_bracci4.jpg'
         ],
         categoryId: 'tende-da-esterno'
       },
       {
-        id: 'guide-laterali',
-        title: 'Guide Laterali',
-        description: 'Le guide laterali sono ideali per terrazze e giardini. Offrono una copertura ampia e sono facili da utilizzare.',
+        id: 'tende-a-caduta',
+        title: 'Tende a Caduta',
+        description: 'Le tende a caduta sono ideali per terrazze e giardini. Offrono una copertura ampia e sono facili da utilizzare.',
         features: [
-          'Estensione fino a 3 metri',
           'Regolazione dell\'inclinazione',
           'Motorizzazione opzionale',
           'Tessuti di alta qualità'
         ],
-        materials: ['Alluminio', 'Acciaio inox', 'Acrilico'],
-        colors: ['Bianco', 'Avorio', 'Marrone', 'Grigio', 'Blu navy'],
+        materials: ['Alluminio', 'Acciaio inox', 'Acrilico', 'PVC'],
+        colors: ['A scelta da campionario'],
         images: [
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro175.jpg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro152.jpg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro216.jpg'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/tende_a_caduta1.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/tende_a_caduta2.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/tende_a_caduta3.jpg'
         ],
         categoryId: 'tende-da-esterno'
       },
@@ -95,17 +96,18 @@ export const productCategories: ProductCategory[] = [
         title: 'Piantane Anteriori',
         description: 'Le piantane anteriori permettono di regolare la quantità di luce e aria. Ideale per creare un ambiente confortevole in ogni stagione.',
         features: [
-          'Lamelle orientabili',
-          'Resistente a vento e neve',
-          'Illuminazione LED integrata',
+          'Telo in PVC triplo strato',
+          'Resistente al vento',
+          'Illuminazione LED integrata (opzionale)',
           'Sensori climatici'
         ],
         materials: ['Alluminio', 'Acciaio inox'],
-        colors: ['Bianco', 'Grigio antracite', 'Marrone', 'Nero'],
+        colors: ['Bianco', 'Grigio', 'Bronzo', 'Perla'],
         images: [
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro86.jpeg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro106.jpeg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro117.jpeg'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/piantane_anteriori2.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/piantane_anteriori1.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/piantane_anteriori3.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/piantane_anteriori5.jpg'
         ],
         categoryId: 'pergole'
       },
@@ -122,9 +124,9 @@ export const productCategories: ProductCategory[] = [
         materials: ['Alluminio', 'PVC', 'Policarbonato'],
         colors: ['Bianco', 'Avorio', 'Grigio', 'Effetto legno'],
         images: [
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro79.jpeg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro82.jpeg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro77.jpeg'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/piane_autoportanti1.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/piane_autoportanti2.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/piane_autoportanti6.jpeg'
         ],
         categoryId: 'pergole'
       },
@@ -139,11 +141,11 @@ export const productCategories: ProductCategory[] = [
           'Resistente a vento forte'
         ],
         materials: ['Alluminio rinforzato', 'Acciaio'],
-        colors: ['Bianco', 'Grigio', 'Nero', 'Verde'],
+        colors: ['Bianco', 'Grigio', 'Nero', 'Marrone'],
         images: [
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro90.jpeg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro138.jpg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro100.jpeg'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/senza_piantane1.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/senza_piantane2.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/senza_piantane3.jpg'
         ],
         categoryId: 'pergole'
       }
@@ -156,14 +158,15 @@ export const productCategories: ProductCategory[] = [
     image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro87.jpeg',
     products: [
       {
-        id: 'r601-pergoklima',
-        title: 'R601-PERGOKLIMA',
-        description: 'La tenda a bracci tradizionale è un classico per la protezione dal sole di terrazze e balconi.',
+        id: 'bioclimatiche',
+        title: 'Bioclimatiche',
+        description: 'Le bioclimatiche sono un classico per la protezione dal sole di terrazze e balconi.',
         features: [
-          'Estensione fino a 3,5 metri',
+          'Interamente in alluminio',
           'Facilità di utilizzo',
-          'Disponibile con manovella o motore',
-          'Tessuti resistenti ai raggi UV'
+          'Comando a motore',
+          'Tessuti resistenti ai raggi UV',
+          'Modulo Max da 6m x 8m'
         ],
         materials: ['Alluminio', 'Acrilico'],
         colors: ['Bianco', 'Crema', 'Grigio', 'A righe'],

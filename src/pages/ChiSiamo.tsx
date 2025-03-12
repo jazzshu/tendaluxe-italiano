@@ -57,7 +57,7 @@ const ChiSiamo = () => {
             Chi Siamo
           </h1>
           <p className="text-muted-foreground text-lg">
-            Da oltre 40 anni, Crystal Tende è sinonimo di eccellenza nel settore delle tende da sole,
+            Crystal Tende è sinonimo di eccellenza nel settore delle tende da sole,
             combinando tradizione artigianale e innovazione tecnologica.
           </p>
         </motion.div>
@@ -75,8 +75,8 @@ const ChiSiamo = () => {
               La Nostra Storia
             </h2>
             <p className="text-muted-foreground">
-              Crystal Tende nasce nel 1980 come piccola impresa familiare, frutto della passione e della competenza 
-              del fondatore, Antonio Ricci. Da allora, l'azienda è cresciuta mantenendo sempre il suo impegno verso la 
+            Crystaltende nasce come piccola impresa familiare , frutto della passione e della competenza nel settore. 
+            Da allora, l'azienda è cresciuta mantenendo sempre il suo impegno verso la 
               qualità artigianale e l'attenzione ai dettagli.
             </p>
             <p className="text-muted-foreground">
@@ -85,7 +85,7 @@ const ChiSiamo = () => {
               e la qualità delle nostre installazioni.
             </p>
             <p className="text-muted-foreground">
-              Oggi, Crystal Tende è gestita dalla seconda generazione della famiglia Ricci, che porta avanti i valori 
+              Oggi Crystaltende è gestita dalla seconda generazione della famiglia Loscalzo, che porta avanti i valori 
               fondanti dell'azienda arricchendoli con una visione moderna e innovativa.
             </p>
           </motion.div>
@@ -137,7 +137,7 @@ const ChiSiamo = () => {
         </motion.div>
 
         {/* Timeline */}
-        <motion.div
+{/*         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
@@ -170,7 +170,7 @@ const ChiSiamo = () => {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Why Choose Us */}
         <motion.div
@@ -196,7 +196,7 @@ const ChiSiamo = () => {
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Installazione professionale eseguita da tecnici esperti</span>
+                  <span>Installazione professionale con tecnici personalizzati interni </span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
