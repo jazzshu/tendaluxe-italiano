@@ -312,7 +312,7 @@ export const productCategories: ProductCategory[] = [
     id: 'zanzariere',
     title: 'Zanzariere',
     description: 'Vetrate che offrono la massima protezione da sole, pioggia e vento. Ideali per verande e spazi chiusi.',
-    image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/vetratescorrevoli2.jpg',
+    image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/zanzariera.jpg',
     products: [
       {
         id: 'suncover',
@@ -321,7 +321,7 @@ export const productCategories: ProductCategory[] = [
         features: [
         ],
         images: [
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/vetratescorrevoli1.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/zanzariera2.jpg',
         ],
         categoryId: 'suncover'
       },
@@ -332,7 +332,7 @@ export const productCategories: ProductCategory[] = [
         features: [
         ],
         images: [
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/impacchettabile2.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/zanzariera3.jpg',
         ],
         categoryId: 'tende-da-interno'
       },
