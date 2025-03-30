@@ -1,33 +1,78 @@
 
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, Clock, Instagram } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
-const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-  event.preventDefault();
-  const API_GATEWAY = "https://smv4u297s3.execute-api.eu-central-1.amazonaws.com/send-email"
 
-  const formData = {
-    name: (document.getElementById("name") as HTMLInputElement).value,
-    email: (document.getElementById("email") as HTMLInputElement).value,
-    phone: (document.getElementById("phone") as HTMLInputElement).value,
-    subject: (document.getElementById("subject") as HTMLInputElement).value,
-    message: (document.getElementById("message") as HTMLInputElement).value,
-  }
-
-  try {
-    const response = await fetch(API_GATEWAY, {
-      method: "POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(formData),
-    });
-    const result = await response.json();
-    alert(result.message || "Email inviata con successo!")
-  } catch (error) {
-    alert("Errore nell'invio della mail");
-  }
-}
 
 const Contatti = () => {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
+    privacy: false
+  });
+
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+
+  // Update form data on input change
+  const handleChange = (e) => {
+    const { id, value, type, checked } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: type === 'checkbox' ? checked: value
+    }));
+  }
+
+  // Validate form fields
+  useEffect(() => {
+    const isValid = 
+      formData.name.trim() !== '' &&
+      formData.email.trim() !== '' &&
+      formData.subject.trim() !== '' &&
+      formData.message.trim() !== '' &&
+      formData.privacy;
+
+      setIsButtonDisabled(!isValid);
+  }, [formData]);
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const API_GATEWAY = "https://smv4u297s3.execute-api.eu-central-1.amazonaws.com/send-email"
+  
+    const formData = {
+      name: (document.getElementById("name") as HTMLInputElement).value,
+      email: (document.getElementById("email") as HTMLInputElement).value,
+      phone: (document.getElementById("phone") as HTMLInputElement).value,
+      subject: (document.getElementById("subject") as HTMLInputElement).value,
+      message: (document.getElementById("message") as HTMLInputElement).value,
+    }
+  
+    try {
+      const response = await fetch(API_GATEWAY, {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(formData),
+      });
+      const result = await response.json();
+      alert(result.message || "Email inviata con successo!")
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+        privacy: false
+      });
+    } catch (error) {
+      alert("Errore nell'invio della mail");
+    }
+  }
+
+
   return (
     <div className="min-h-screen pt-24 pb-20">
       <div className="container mx-auto px-4 md:px-6">
@@ -65,7 +110,7 @@ const Contatti = () => {
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">Telefono</h3>
-                  <p className="text-muted-foreground">+39 012 345 6789</p>
+                  <p className="text-muted-foreground">+39 348 055 2778</p>
                 </div>
               </div>
 
@@ -79,7 +124,7 @@ const Contatti = () => {
                 </div>
               </div>
 
-              <div className="flex items-start">
+              {/* <div className="flex items-start">
                 <div className="p-3 rounded-full bg-primary/10 mr-4">
                   <MapPin className="h-5 w-5 text-primary" />
                 </div>
@@ -87,7 +132,7 @@ const Contatti = () => {
                   <h3 className="font-medium mb-1">Indirizzo</h3>
                   <p className="text-muted-foreground">Via Roma 123, 20100 Milano, Italia</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-start">
                 <div className="p-3 rounded-full bg-primary/10 mr-4">
@@ -105,29 +150,23 @@ const Contatti = () => {
             <div className="pt-4">
               <h3 className="text-lg font-medium mb-4">Seguici sui Social</h3>
               <div className="flex space-x-4">
-                <a
+                {/* <a
                   href="https://facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
                   aria-label="Facebook"
                 >
-                  <svg className="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                  </svg>
-                </a>
+                  <Facebook className="h-4 w-4 text-primary" />
+                </a> */}
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/crystal_tende/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
                   aria-label="Instagram"
                 >
-                  <svg className="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                  </svg>
+                  <Instagram className="h-4 w-4 text-primary" />
                 </a>
               </div>
             </div>
@@ -150,6 +189,8 @@ const Contatti = () => {
                   <input
                     type="text"
                     id="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     className="w-full px-4 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20"
                     required
                   />
@@ -159,6 +200,8 @@ const Contatti = () => {
                   <input
                     type="email"
                     id="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full px-4 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20"
                     required
                   />
@@ -170,6 +213,8 @@ const Contatti = () => {
                 <input
                   type="tel"
                   id="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                   className="w-full px-4 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20"
                 />
               </div>
@@ -179,6 +224,8 @@ const Contatti = () => {
                 <input
                   type="text"
                   id="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
                   className="w-full px-4 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20"
                   required
                 />
@@ -189,6 +236,8 @@ const Contatti = () => {
                 <textarea
                   id="message"
                   rows={5}
+                  value={formData.message}
+                  onChange={handleChange}
                   className="w-full px-4 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20"
                   required
                 />
@@ -198,6 +247,8 @@ const Contatti = () => {
                 <input
                   type="checkbox"
                   id="privacy"
+                  checked={formData.privacy}
+                  onChange={handleChange}
                   className="mt-1 mr-2"
                   required
                 />
@@ -208,7 +259,12 @@ const Contatti = () => {
 
               <button
                 type="submit"
-                className="px-6 py-3 bg-primary text-white rounded-md font-medium transition-all hover:bg-primary/90 w-full"
+                disabled={isButtonDisabled}
+                className={`px-6 py-3 bg-primary text-white rounded-md font-medium transition-all w-full ${
+                  isButtonDisabled 
+                    ? 'opacity-50 cursor-not-allowed' 
+                    : 'hover:bg-primary/90'
+                }`}
               >
                 Invia Messaggio
               </button>
@@ -230,7 +286,7 @@ const Contatti = () => {
           <div className="h-[400px] rounded-lg overflow-hidden border border-border">
             <iframe
               title="Mappa della nostra sede"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.228861864976!2d9.186383715616437!3d45.46432127910077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6a3921dc0c1%3A0xb3f1a90ffda91da9!2sVia%20Roma%2C%20Milano%20MI!5e0!3m2!1sit!2sit!4v1621505721846!5m2!1sit!2sit"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.817795439087!2d11.326888315597057!3d44.50967197910098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd4e6b7e5e9eb%3A0x2e6c8f9e8c8e8b9d!2sVia%20Calvart%2C%20123%2C%2040122%20Bologna%20BO%2C%20Italia!5e0!3m2!1sit!2sit!4v1648765432109!5m2!1sit!2sit"
               width="100%"
               height="100%"
               style={{ border: 0 }}

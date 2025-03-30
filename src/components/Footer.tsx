@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Instagram } from 'lucide-react';
+import { Mail, Phone, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
               Progettiamo e installiamo tende da sole di alta qualità, combinando estetica e funzionalità per migliorare il tuo spazio esterno.
             </p>
             <div className="flex space-x-4">
-              <a 
+              {/* <a 
                 href="https://facebook.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -23,9 +23,9 @@ const Footer = () => {
                 aria-label="Facebook"
               >
                 <Facebook className="h-4 w-4 text-primary" />
-              </a>
+              </a> */}
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/crystal_tende/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="h-8 w-8 flex items-center justify-center rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
@@ -50,7 +50,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-base font-medium">Contatti</h3>
             <div className="space-y-3">
-              <a href="tel:+390123456789" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="tel:+393480552778" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
                 <Phone className="h-4 w-4 mr-2 text-primary" /> +39 348 055 2778
               </a>
               <a href="mailto:info@crystaltende.com" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
