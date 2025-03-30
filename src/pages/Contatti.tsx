@@ -2,6 +2,31 @@
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
+const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  event.preventDefault();
+  const API_GATEWAY = "https://smv4u297s3.execute-api.eu-central-1.amazonaws.com/send-email"
+
+  const formData = {
+    name: (document.getElementById("name") as HTMLInputElement).value,
+    email: (document.getElementById("email") as HTMLInputElement).value,
+    phone: (document.getElementById("phone") as HTMLInputElement).value,
+    subject: (document.getElementById("subject") as HTMLInputElement).value,
+    message: (document.getElementById("message") as HTMLInputElement).value,
+  }
+
+  try {
+    const response = await fetch(API_GATEWAY, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(formData),
+    });
+    const result = await response.json();
+    alert(result.message || "Email inviata con successo!")
+  } catch (error) {
+    alert("Errore nell'invio della mail");
+  }
+}
+
 const Contatti = () => {
   return (
     <div className="min-h-screen pt-24 pb-20">
@@ -118,7 +143,7 @@ const Contatti = () => {
               Scrivici
             </h2>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-1">Nome e Cognome</label>

@@ -7,47 +7,47 @@ const Installazioni = () => {
     {
       src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro79.jpeg',
       alt: 'Tenda da Sole Residenziale',
-      location: 'Villa Privata, Milano'
+      location: ''
     },
     {
       src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro106.jpeg',
       alt: 'Pergola Bioclimatica',
-      location: 'Ristorante La Terrazza, Roma'
+      location: ''
     },
     {
       src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro109.jpeg',
       alt: 'Tenda a Bracci Estensibili',
-      location: 'Appartamento Privato, Firenze'
+      location: ''
     },
     {
       src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro216.jpg',
       alt: 'Tenda a Caduta Verticale',
-      location: 'Hotel Belvedere, Taormina'
+      location: ''
     },
     {
       src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro129.jpeg',
       alt: 'Tenda Ermetica',
-      location: 'Bar Centrale, Napoli'
+      location: ''
     },
     {
       src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro132.jpeg',
       alt: 'Tenda Motorizzata',
-      location: 'Villa con Piscina, Sardegna'
+      location: ''
     },
     {
       src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro90.jpeg',
       alt: 'Pergola Addossata',
-      location: 'Agriturismo Il Casale, Toscana'
+      location: ''
     },
     {
       src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro198.jpg',
       alt: 'Tenda da Sole per Terrazzo',
-      location: 'Attico Privato, Torino'
+      location: ''
     },
     {
       src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro77.jpeg',
       alt: 'Tenda a Vela',
-      location: 'Stabilimento Balneare, Rimini'
+      location: ''
     }
   ];
 

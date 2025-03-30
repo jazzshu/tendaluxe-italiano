@@ -78,7 +78,7 @@ const Index = () => {
               className="w-full"
             >
               <img
-                src="https://images.unsplash.com/photo-1493962853295-0fd70327578a"
+                src="https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/chisiamo.jpeg"
                 alt="Il nostro showroom"
                 className="rounded-lg shadow-md object-cover w-full h-[300px] md:h-[500px]"
               />

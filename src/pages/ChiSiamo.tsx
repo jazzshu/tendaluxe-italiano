@@ -21,29 +21,6 @@ const ChiSiamo = () => {
     }
   ];
 
-  const milestones = [
-    {
-      year: '1980',
-      title: 'La Fondazione',
-      description: 'Crystal Tende nasce come piccolo laboratorio artigianale a Milano.'
-    },
-    {
-      year: '1995',
-      title: 'Espansione',
-      description: 'Ampliamento dell\'attività con l\'apertura del primo showroom e l\'introduzione di nuovi prodotti.'
-    },
-    {
-      year: '2008',
-      title: 'Innovazione Tecnologica',
-      description: 'Integrazione di soluzioni motorizzate e automatizzate nella nostra gamma di prodotti.'
-    },
-    {
-      year: '2020',
-      title: 'Oggi',
-      description: 'Un\'azienda leader nel settore con un team di professionisti dedicati e clienti in tutta Italia.'
-    }
-  ];
-
   return (
     <div className="min-h-screen pt-24 pb-20">
       <div className="container mx-auto px-4 md:px-6">
@@ -97,7 +74,7 @@ const ChiSiamo = () => {
             viewport={{ once: true }}
           >
             <img
-              src="https://images.unsplash.com/photo-1493962853295-0fd70327578a"
+              src="https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/chisiamo.jpeg"
               alt="Il nostro team al lavoro"
               className="rounded-lg shadow-md w-full h-[500px] object-cover"
             />
@@ -135,42 +112,6 @@ const ChiSiamo = () => {
             ))}
           </div>
         </motion.div>
-
-        {/* Timeline */}
-{/*         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-          className="mb-20"
-        >
-          <h2 className="text-2xl md:text-3xl font-display font-medium mb-10 text-center">
-            La Nostra Evoluzione
-          </h2>
-
-          <div className="space-y-12">
-            {milestones.map((milestone, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                className="flex flex-col md:flex-row"
-              >
-                <div className="md:w-1/4 mb-4 md:mb-0">
-                  <div className="bg-primary text-white text-lg font-medium py-2 px-4 rounded inline-block">
-                    {milestone.year}
-                  </div>
-                </div>
-                <div className="md:w-3/4">
-                  <h3 className="text-xl font-medium mb-2">{milestone.title}</h3>
-                  <p className="text-muted-foreground">{milestone.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div> */}
 
         {/* Why Choose Us */}
         <motion.div
