@@ -158,8 +158,8 @@ export const productCategories: ProductCategory[] = [
     image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro87.jpeg',
     products: [
       {
-        id: 'bioclimatiche',
-        title: 'Bioclimatiche',
+        id: 'alluminio',
+        title: 'Alluminio',
         description: 'Le bioclimatiche sono un classico per la protezione dal sole di terrazze e balconi.',
         features: [
           'Interamente in alluminio',
@@ -168,18 +168,18 @@ export const productCategories: ProductCategory[] = [
           'Tessuti resistenti ai raggi UV',
           'Modulo Max da 6m x 8m'
         ],
-        materials: ['Alluminio', 'Acrilico'],
+        materials: ['Alluminio'],
         colors: ['Bianco', 'Crema', 'Grigio', 'A righe'],
         images: [
           'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro87.jpeg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro85.jpeg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro82.jpeg'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/lavoro85.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/lavoro65.jpeg'
         ],
-        categoryId: 'tende-a-bracci'
+        categoryId: 'alluminio'
       },
       {
-        id: 'r610-pergoklima',
-        title: 'R610-PERGOKLIMA',
+        id: 'acrilico',
+        title: 'Acrilico',
         description: 'La tenda a bracci cassonata protegge il tessuto quando la tenda è chiusa, garantendo una maggiore durata.',
         features: [
           'Cassonetto protettivo',
@@ -187,18 +187,18 @@ export const productCategories: ProductCategory[] = [
           'Design elegante',
           'Motorizzazione disponibile'
         ],
-        materials: ['Alluminio', 'Acrilico impermeabile'],
+        materials: ['Acrilico impermeabile'],
         colors: ['Bianco', 'Avorio', 'Grigio', 'Blu'],
         images: [
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro76.jpeg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro79.jpeg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro72.jpeg'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/lavoro65.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/lavoro176.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/lavoro129.jpeg'
         ],
         categoryId: 'tende-a-bracci'
       },
       {
-        id: 'r620-pergoklima',
-        title: 'R620-PERGOKLIMA',
+        id: 'personalizzato',
+        title: 'Personalizzato',
         description: 'La tenda a bracci con volant frontale offre una protezione aggiuntiva dal sole basso e un tocco estetico distintivo.',
         features: [
           'Volant decorativo',
@@ -206,90 +206,25 @@ export const productCategories: ProductCategory[] = [
           'Design personalizzabile',
           'Facile manutenzione'
         ],
-        materials: ['Alluminio', 'Acrilico'],
+        materials: ['Personalizzato'],
         colors: ['Bianco', 'Verde', 'Bordeaux', 'A righe', 'Fantasia'],
         images: [
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro54.jpeg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/lavoro111.jpeg',
           'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro49.jpeg',
-          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro31.jpeg'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/lavoro65.jpeg'
         ],
         categoryId: 'tende-a-bracci'
       }
     ]
   },
   {
-    id: 'tende-a-caduta',
-    title: 'Tende a Caduta',
-    description: 'Perfette per proteggere da sole e sguardi indiscreti, queste tende verticali sono ideali per balconi, finestre e verande.',
-    image: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
-    products: [
-      {
-        id: 'tenda-a-caduta-verticale',
-        title: 'Tenda a Caduta Verticale',
-        description: 'La tenda a caduta verticale è ideale per proteggere dal sole e dagli sguardi, mantenendo la vista verso l\'esterno.',
-        features: [
-          'Scorrimento verticale',
-          'Protezione UV',
-          'Visibilità verso l\'esterno',
-          'Facile installazione'
-        ],
-        materials: ['Alluminio', 'Tessuto screen'],
-        colors: ['Bianco', 'Grigio', 'Sabbia', 'Nero'],
-        images: [
-          'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
-          'https://images.unsplash.com/photo-1466721591366-2d5fba72006d'
-        ],
-        categoryId: 'tende-a-caduta'
-      },
-      {
-        id: 'tenda-veranda',
-        title: 'Tenda Veranda',
-        description: 'La tenda veranda è perfetta per creare uno spazio protetto dal sole ma luminoso, ideale per verande e giardini d\'inverno.',
-        features: [
-          'Installazione su guide',
-          'Adatta a superfici inclinate',
-          'Resistente al vento',
-          'Motorizzazione disponibile'
-        ],
-        materials: ['Alluminio', 'Acrilico', 'PVC cristal'],
-        colors: ['Bianco', 'Avorio', 'Grigio'],
-        images: [
-          'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
-          'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a'
-        ],
-        categoryId: 'tende-a-caduta'
-      },
-      {
-        id: 'tenda-a-caduta-con-zip',
-        title: 'Tenda a Caduta con ZIP',
-        description: 'La tenda a caduta con sistema ZIP garantisce la massima tenuta al vento e una chiusura ermetica su tutti i lati.',
-        features: [
-          'Sistema di chiusura ZIP',
-          'Resistenza al vento classe 6',
-          'Tenuta all\'acqua',
-          'Oscuramento totale disponibile'
-        ],
-        materials: ['Alluminio rinforzato', 'Tessuti tecnici'],
-        colors: ['Bianco', 'Grigio antracite', 'Avorio', 'Nero'],
-        images: [
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
-          'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
-          'https://images.unsplash.com/photo-1466721591366-2d5fba72006d'
-        ],
-        categoryId: 'tende-a-caduta'
-      }
-    ]
-  },
-  {
     id: 'tende-ermetiche',
     title: 'Tende Ermetiche',
-    description: 'Tende a chiusura totale che offrono la massima protezione da sole, pioggia e vento. Ideali per verande e spazi chiusi.',
-    image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027',
+    description: 'Perfette per proteggere da sole e sguardi indiscreti, queste tende verticali sono ideali per balconi, finestre e verande.',
+    image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/texout1.jpg',
     products: [
       {
-        id: 'tenda-ermetica-cristal',
+        id: 'tenda-ermitiche-cristal',
         title: 'Tenda Ermetica Cristal',
         description: 'La tenda ermetica con PVC cristal trasparente permette di godere della vista esterna mantenendo protezione da vento e pioggia.',
         features: [
@@ -298,62 +233,111 @@ export const productCategories: ProductCategory[] = [
           'Resistente agli agenti atmosferici',
           'Ideale per la stagione fredda'
         ],
-        materials: ['Alluminio', 'PVC cristal'],
-        colors: ['Trasparente con profili bianchi', 'Trasparente con profili grigi'],
+        colors: ['Cristal Trasparente', 'Cristal Fume\' Grigio Texout', 'Cristal Fume\' Bronze'],
         images: [
-          'https://images.unsplash.com/photo-1472396961693-142e6e269027',
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
-          'https://images.unsplash.com/photo-1721322800607-8c38375eef04'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/ermetica1.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/texout1.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/texout2.jpg'
         ],
         categoryId: 'tende-ermetiche'
       },
       {
-        id: 'tenda-ermetica-motorizzata',
-        title: 'Tenda Ermetica Motorizzata',
-        description: 'La tenda ermetica motorizzata offre il massimo comfort con apertura e chiusura automatica tramite telecomando o smartphone.',
+        id: 'doppie-tende',
+        title: 'Doppie Tende',
+        description: 'Le Doppie Tende hanno un cassonetto dotato di doppio tubo avvolgitore capace di contenere due tipologie di tessuto: Cristal/Acrilico, Cristal/Soltis ecc.',
         features: [
           'Motorizzazione integrata',
           'Controllo via smartphone',
           'Sensori vento e pioggia',
-          'Programmazione oraria'
         ],
         materials: ['Alluminio rinforzato', 'Tessuti tecnici impermeabili'],
-        colors: ['Bianco', 'Grigio', 'Beige'],
+        colors: ['A scelta da campionario'],
         images: [
-          'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
-          'https://images.unsplash.com/photo-1472396961693-142e6e269027',
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a'
-        ],
-        categoryId: 'tende-ermetiche'
-      },
-      {
-        id: 'tenda-ermetica-invernale',
-        title: 'Tenda Ermetica Invernale',
-        description: 'La tenda ermetica invernale è progettata per proteggere dal freddo e creare uno spazio abitabile anche nei mesi invernali.',
-        features: [
-          'Isolamento termico',
-          'Chiusura totale',
-          'Protezione da pioggia e neve',
-          'Materiali resistenti al gelo'
-        ],
-        materials: ['Alluminio con taglio termico', 'PVC isolante'],
-        colors: ['Bianco', 'Grigio antracite'],
-        images: [
-          'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
-          'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
-          'https://images.unsplash.com/photo-1472396961693-142e6e269027'
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/zip1.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/zip2.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/zip3.jpg'
         ],
         categoryId: 'tende-ermetiche'
       }
     ]
   },
   {
-    id: 'tende-motorizzate',
-    title: 'Tende Motorizzate',
-    description: 'Soluzioni all\'avanguardia controllabili con telecomando o smartphone per il massimo del comfort e della comodità.',
-    image: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
-    products: []
-  }
+    id: 'vetrate',
+    title: 'Vetrate',
+    description: 'Vetrate che offrono la massima protezione da sole, pioggia e vento. Ideali per verande e spazi chiusi.',
+    image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/vetratescorrevoli2.jpg',
+    products: [
+      {
+        id: 'vetrate-scorrevoli',
+        title: 'Vetrate Scorrevoli',
+        description: 'Le vetrate scorrevoli in vetro temperato da 10mm',
+        features: [
+          'Larghezza singola anta min 600mm/Max 1300mm, Altezza Max 3000mm ',
+          'Scorrimento su tre tipologie di guide inferiori in alluminio verniciato in polvere',
+          'Portata 130kg',
+          'Isolamento termico e acustico (g 0,81 e Rw 33dB)'
+        ],
+        materials: ['Alluminio', 'PVC cristal'],
+        colors: ['Trasparente con profili bianchi', 'Trasparente con profili grigi'],
+        images: [
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/vetratescorrevoli1.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/vetratescorrevoli2.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/vetratescorrevoli3.jpg'
+        ],
+        categoryId: 'vetrate'
+      },
+      {
+        id: 'vetrate-impacchettabili',
+        title: 'Vetrate Impacchettabili',
+        description: 'Le vetrate impacchettabili sono in vetro temperato da 10mm',
+        features: [
+          'Larghezza singola anta min 600mm Max 1300mm, Altezza Max 3000m',
+          'Scorrimento su due tipologie di guide inferiori in alluminio verniciato a polvere',
+          'Ribassata antinciampo o a incasso',
+          'Portata 50kg ad anta',
+          'Isolamento termico e acustico (g 0,81 e Rw 33dB)'
+        ],
+        materials: ['Alluminio rinforzato', 'Tessuti tecnici impermeabili'],
+        colors: ['Bianco', 'Grigio', 'Beige'],
+        images: [
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/impacchettabile2.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/impacchettabile1.jpg',
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/impacchettabile3.jpg'
+        ],
+        categoryId: 'vetrate'
+      },
+    ]
+  },
+  {
+    id: 'zanzariere',
+    title: 'Zanzariere',
+    description: 'Vetrate che offrono la massima protezione da sole, pioggia e vento. Ideali per verande e spazi chiusi.',
+    image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/vetratescorrevoli2.jpg',
+    products: [
+      {
+        id: 'suncover',
+        title: 'Zanzariere Suncover',
+        description: 'Le Zanzariere Suncover',
+        features: [
+        ],
+        images: [
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/vetratescorrevoli1.jpg',
+        ],
+        categoryId: 'suncover'
+      },
+      {
+        id: 'tende-da-interno-suncover',
+        title: 'Tende da Interno',
+        description: 'Le zanzariere da interno impacchettabili sono in vetro temperato da 10mm',
+        features: [
+        ],
+        images: [
+          'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/impacchettabile2.jpg',
+        ],
+        categoryId: 'tende-da-interno'
+      },
+    ]
+  },
 ];
 
 export const getProductsByCategoryId = (categoryId: string): Product[] => {

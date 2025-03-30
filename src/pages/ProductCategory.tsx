@@ -10,6 +10,16 @@ const ProductCategory = () => {
   const category = getCategoryById(categoryId || '');
   const products = getProductsByCategoryId(categoryId || '');
 
+  function getCategoryLink(product) {
+    if(product.id === 'suncover') {
+      return 'https://suncover.com/en/zanzariere/'
+    } else if (product.id === 'tende-da-interno-suncover') {
+      return 'https://suncover.com/en/tende-da-interno/'
+    } else {
+      return `/prodotti/${category.id}/${product.id}`
+    }
+  }
+
   if (!category) {
     return (
       <div className="min-h-screen pt-24 pb-20 flex items-center justify-center">
@@ -110,7 +120,7 @@ const ProductCategory = () => {
                     <h3 className="text-xl font-display font-medium mb-2">{product.title}</h3>
                     <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{product.description}</p>
                     <Link
-                      to={`/prodotti/${category.id}/${product.id}`}
+                      to={getCategoryLink(product)}
                       className="inline-flex items-center text-sm font-medium text-primary hover:underline"
                     >
                       Scopri di più

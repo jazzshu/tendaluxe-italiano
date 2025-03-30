@@ -29,11 +29,8 @@ const ProductDetail = () => {
     );
   }
 
-  // Determine the back link - special case for tende-a-bracci
+  // // Determine the back link - special case for tende-a-bracci
   const getBackLink = () => {
-    if (categoryId === 'bioclimatiche') {
-      return '/prodotti';
-    }
     return `/prodotti/${categoryId}`;
   };
 
