@@ -10,7 +10,7 @@ const Installazioni = () => {
       location: ''
     },
     {
-      src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro106.jpeg',
+      src: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/zanzariera3.jpg',
       alt: 'Pergola Bioclimatica',
       location: ''
     },
