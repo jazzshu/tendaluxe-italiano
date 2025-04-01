@@ -124,16 +124,6 @@ const Contatti = () => {
                 </div>
               </div>
 
-              {/* <div className="flex items-start">
-                <div className="p-3 rounded-full bg-primary/10 mr-4">
-                  <MapPin className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-medium mb-1">Indirizzo</h3>
-                  <p className="text-muted-foreground">Via Roma 123, 20100 Milano, Italia</p>
-                </div>
-              </div> */}
-
               <div className="flex items-start">
                 <div className="p-3 rounded-full bg-primary/10 mr-4">
                   <Clock className="h-5 w-5 text-primary" />
@@ -150,15 +140,6 @@ const Contatti = () => {
             <div className="pt-4">
               <h3 className="text-lg font-medium mb-4">Seguici sui Social</h3>
               <div className="flex space-x-4">
-                {/* <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="h-4 w-4 text-primary" />
-                </a> */}
                 <a
                   href="https://www.instagram.com/crystal_tende/"
                   target="_blank"
