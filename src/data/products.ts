@@ -158,8 +158,8 @@ export const productCategories: ProductCategory[] = [
     image: 'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro87.jpeg',
     products: [
       {
-        id: 'alluminio',
-        title: 'Alluminio',
+        id: 'autoportante',
+        title: 'Autoportante',
         description: 'Le bioclimatiche sono un classico per la protezione dal sole di terrazze e balconi.',
         features: [
           'Interamente in alluminio',
@@ -175,11 +175,11 @@ export const productCategories: ProductCategory[] = [
           'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/lavoro85.jpeg',
           'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/lavoro65.jpeg'
         ],
-        categoryId: 'alluminio'
+        categoryId: 'autoportante'
       },
       {
-        id: 'acrilico',
-        title: 'Acrilico',
+        id: 'addossata',
+        title: 'Addossata',
         description: 'La tenda a bracci cassonata protegge il tessuto quando la tenda è chiusa, garantendo una maggiore durata.',
         features: [
           'Cassonetto protettivo',
@@ -187,18 +187,18 @@ export const productCategories: ProductCategory[] = [
           'Design elegante',
           'Motorizzazione disponibile'
         ],
-        materials: ['Acrilico impermeabile'],
+        materials: ['Alluminio'],
         colors: ['Bianco', 'Avorio', 'Grigio', 'Blu'],
         images: [
           'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/lavoro65.jpeg',
           'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/lavoro176.jpg',
           'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/lavoro129.jpeg'
         ],
-        categoryId: 'tende-a-bracci'
+        categoryId: 'addossata'
       },
       {
-        id: 'personalizzato',
-        title: 'Personalizzato',
+        id: 'senza-piantane',
+        title: 'Senza Piantane',
         description: 'La tenda a bracci con volant frontale offre una protezione aggiuntiva dal sole basso e un tocco estetico distintivo.',
         features: [
           'Volant decorativo',
@@ -206,14 +206,14 @@ export const productCategories: ProductCategory[] = [
           'Design personalizzabile',
           'Facile manutenzione'
         ],
-        materials: ['Personalizzato'],
+        materials: ['Alluminio'],
         colors: ['Bianco', 'Verde', 'Bordeaux', 'A righe', 'Fantasia'],
         images: [
           'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/lavoro111.jpeg',
           'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/lavori/lavoro49.jpeg',
           'https://crystal-tende-bucket.s3.eu-central-1.amazonaws.com/prodotti-disponibili/lavoro65.jpeg'
         ],
-        categoryId: 'tende-a-bracci'
+        categoryId: 'senza-piantane'
       }
     ]
   },
