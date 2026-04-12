@@ -267,7 +267,7 @@ const Contatti = () => {
           <div className="h-[400px] rounded-lg overflow-hidden border border-border">
             <iframe
               title="Mappa della nostra sede"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.817795439087!2d11.326888315597057!3d44.50967197910098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd4e6b7e5e9eb%3A0x2e6c8f9e8c8e8b9d!2sVia%20Calvart%2C%20123%2C%2040122%20Bologna%20BO%2C%20Italia!5e0!3m2!1sit!2sit!4v1648765432109!5m2!1sit!2sit"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.871630348982!2d11.36270397702438!3d44.59599247107303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fcd76a6ed40bf%3A0x8113bc0aea1aa02a!2sVia%20Bergonzoni%20G.%2C%204%2C%2040050%20Funo%20BO%2C%20Italia!5e1!3m2!1sit!2sch!4v1776012392121!5m2!1sit!2sch"
               width="100%"
               height="100%"
               style={{ border: 0 }}
